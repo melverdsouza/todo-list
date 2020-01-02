@@ -5,3 +5,14 @@
     font-family: helvetica;
     font-weight: bold;
 }
+
+.task {
+    font-size: 24px;
+}
+.main-section {
+    margin: 5% 10%;   
+}
+
+.add-input {
+    width: 35%;
+}
