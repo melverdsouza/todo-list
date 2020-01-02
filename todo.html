@@ -9,55 +9,55 @@
 </head>
 <script src="todo.js"></script>
 <body>
-
     <div class="tasker" id="tasker">
         <div class="heading">TO DO LIST</div>
-        <div class="all-tasks">
-            <h3 class="my-list-heading">My Checklist</h3>
-            <ul>
-                <li>checklist1</li>
-                <li>checklist2</li>
-                <li>checklist3</li>
-            </ul>
-            <form action="">
-                <input type="text" placeholder="add new task" class="new-list">
-                <button class="btn-list" aria-label="add new-list">+</button>
-            </form>
-        </div>
-        <div class="to-do-list">
-            <div class="to-do-header">
-                <h3 class="list-title">Youtube</h3>
-                <p class="task-count">3 tasks remaining</p>
+        <div class="for-flex">
+            <div class="all-tasks">
+                <h3 class="my-list-heading">My Checklist</h3>
+                <ul>
+                    <li class="active-list">checklist1</li>
+                    <li>checklist2</li>
+                    <li>checklist3</li>
+                </ul>
+                <form action="">
+                    <input type="text" placeholder="add new task" class="new-list">
+                    <button class="btn-list" aria-label="add new-list">+</button>
+                </form>
             </div>
-            <div class="to-do-body">
-                <div class="tasks">
-                    <div class="task">
-                        <input type="checkbox" name="" id="task1">
-                        <label for="task1">My first task in to do list</label>
-                    </div> 
-                    <div class="task">
-                        <input type="checkbox" name="" id="task2">
-                        <label for="task2">My second task in to do list</label>
-                    </div> 
-                    <div class="task">
-                        <input type="checkbox" name="" id="task3">
-                        <label for="task3">My third task in to do list</label>
-                    </div> 
+            <div class="to-do-list">
+                <div class="to-do-header">
+                    <h3 class="list-title">Youtube</h3>
+                    <p class="task-count">3 tasks remaining</p>
                 </div>
-                
-                <div class="new-task-creator">
-                    <form action="">
-                        <input type="text" placeholder="add new todo" class="new-to-do">
-                        <button class="btn-todo" aria-label="add new to-do">+</button>
-                    </form>
+                <div class="to-do-body">
+                    <div class="tasks">
+                        <div class="task">
+                            <input type="checkbox" name="" id="task1">
+                            <label for="task1">My first task in to do list</label>
+                        </div> 
+                        <div class="task">
+                            <input type="checkbox" name="" id="task2">
+                            <label for="task2">My second task in to do list</label>
+                        </div> 
+                        <div class="task">
+                            <input type="checkbox" name="" id="task3">
+                            <label for="task3">My third task in to do list</label>
+                        </div> 
+                    </div>
+                    
+                    <div class="new-task-creator">
+                        <form action="">
+                            <input type="text" placeholder="add new todo" class="new-to-do">
+                            <button class="btn-todo" aria-label="add new-to-do">+</button>
+                        </form>
+                    </div>
+                    <div class="delete-stuff">
+                        <button class="btn delete">Clear completed tasks</button>
+                        <button class="btn delete">Delete list</button>
+                    </div>
                 </div>
-                <div class="delete-stuff">
-                    <button class="btn delete">Clear completed tasks</button>
-                    <button class="btn delete">Delete list</button>
-                </div>
-            </div>
+            </div>    
         </div>
     </div>
-    
 </body>
 </html>

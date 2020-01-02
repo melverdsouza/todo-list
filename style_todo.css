@@ -1,18 +1,107 @@
+body {
+    background-color: #007acc;
+}
 .heading {
     text-align: center;
-    font-size: 40px;
+    font-size: 44px;
     padding-top: 3%;
     font-family: helvetica;
     font-weight: bold;
+    color: white;
+}
+.all-tasks {
+    margin-left: 5%;
+    margin-top: 5%;
+    color: white;
+}
+.my-list-heading {
+    color: white;
+    font-size: 32px;
+    font-family: helvetica;
+}
+.to-do-list {
+    margin-left: 15%;
+    margin-top: 5%;
+    width: 50%;
+}
+.for-flex {
+    display: flex;
 }
 
-.task {
-    font-size: 24px;
-}
-.main-section {
-    margin: 5% 10%;   
+ul {
+    font-size: 20px;
+    margin-left: -10%;
+    position: relative;
+    line-height: 1.7;
+    list-style: circle;
+    font-family: helvetica;
 }
 
-.add-input {
-    width: 35%;
+.active-list {
+    font-weight: bold;
+    font-size: 22px;
+}
+
+.new-list {
+    background: transparent;
+    border: 0;
+    border-bottom: 1px solid currentColor;
+    border-bottom: 1.3px solid white;
+    color: inherit;
+    order: 2;
+}
+::placeholder {
+    color: white;
+    opacity: 1;
+  }
+button {
+    margin-left: 1%;
+    background: transparent;
+    border: none;
+    color: white;
+    font-weight: bold;
+    font-size: 22px;
+}
+
+.list-title {
+    color: white;
+    font-size: 32px;
+    font-family: helvetica;
+}
+.to-do-header {
+    display: flex;
+}
+
+.task-count {
+    color: white;
+    margin-left: 10%;
+    width: auto;
+    margin-top: 9%;
+    font-size: 18px;
+}
+.tasks {
+    line-height: 1.8em;
+    font-family: helvetica;
+    font-size: 18px;
+    color: white;
+}
+.new-to-do {
+    background: transparent;
+    border: 0;
+    border-bottom: 1px solid currentColor;
+    border-bottom: 1.3px solid white;
+    color: inherit;
+    margin-top: 5%;
+    order: 2;
+}
+.delete-stuff {
+    margin-top: 5%;
+    margin-left: -5%;
+}
+.delete {
+    font-size: 16px;
+    margin-left: 3%;
+}
+input {
+    color: white;
 }
