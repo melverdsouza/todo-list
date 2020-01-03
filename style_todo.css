@@ -15,14 +15,16 @@ body {
     color: white;
 }
 .my-list-heading {
-    color: white;
     font-size: 32px;
     font-family: helvetica;
 }
 .to-do-list {
     margin-left: 15%;
     margin-top: 5%;
-    width: 50%;
+    width: 40%;
+    height: auto;
+    background-color: lightgray;
+    color: #808080;
 }
 .for-flex {
     display: flex;
@@ -49,12 +51,33 @@ ul {
     border-bottom: 1.3px solid white;
     color: inherit;
     order: 2;
+    margin-left: 3%;
 }
-::placeholder {
-    color: white;
+.new-to-do::placeholder {
+    color: #808080;
     opacity: 1;
   }
-button {
+.new-list::placeholder {
+    color: white;
+    opacity: 1;
+}
+button.btn-todo {
+    margin-left: 1%;
+    background: transparent;
+    border: none;
+    color: #808080;
+    font-weight: bold;
+    font-size: 22px;
+}
+button.delete {
+    margin-left: 5%;
+    background: transparent;
+    border: none;
+    color: #808080;
+    font-weight: bold;
+    font-size: 14px;
+}
+button.btn-list {
     margin-left: 1%;
     background: transparent;
     border: none;
@@ -64,16 +87,18 @@ button {
 }
 
 .list-title {
-    color: white;
+    color: #595959;
     font-size: 32px;
     font-family: helvetica;
 }
 .to-do-header {
     display: flex;
+    justify-content: space-around;
+    background-color: #bfbfbf;
 }
 
 .task-count {
-    color: white;
+    color: #595959;
     margin-left: 10%;
     width: auto;
     margin-top: 9%;
@@ -83,16 +108,16 @@ button {
     line-height: 1.8em;
     font-family: helvetica;
     font-size: 18px;
-    color: white;
+    color: #808080;
 }
 .new-to-do {
     background: transparent;
     border: 0;
-    border-bottom: 1px solid currentColor;
-    border-bottom: 1.3px solid white;
-    color: inherit;
+    border-bottom: 1.3px solid #808080;
+    color: #808080;
     margin-top: 5%;
     order: 2;
+    margin-left: 3%;
 }
 .delete-stuff {
     margin-top: 5%;
@@ -100,8 +125,23 @@ button {
 }
 .delete {
     font-size: 16px;
-    margin-left: 3%;
+    margin-left: 5%;
+    color: #808080;
+    padding-bottom: 5%;
 }
 input {
-    color: white;
+    color: #808080;
 }
+::selection {
+    background: white;
+}
+.add {
+    color: #808080;
+}
+.strike:checked + label {
+    color:#808080;
+    text-decoration: line-through;
+  }
+  .delete:hover {
+      font-size: 16px;
+  }
