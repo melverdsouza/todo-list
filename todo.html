@@ -4,20 +4,19 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style_todo.css">
-    <link rel="" href="todo.js">
     <title>To do</title>
 </head>
-<script src="todo.js"></script>
+<script defer src="todo.js"></script>
 <body>
     <div class="tasker" id="tasker">
         <div class="heading">TO DO LIST</div>
         <div class="for-flex">
             <div class="all-tasks">
                 <h3 class="my-list-heading">My Checklist</h3>
-                <ul>
-                    <li class="active-list">checklist1</li>
-                    <li>checklist2</li>
-                    <li>checklist3</li>
+                <ul data-lists>
+                    <!-- <li class="active-list list-name">checklist1</li>
+                    <li class='list-name'>checklist2</li>
+                    <li class='list-name'>checklist3</li> -->
                 </ul>
                 <form action="">
                     <input type="text" placeholder="add new task" class="new-list">
