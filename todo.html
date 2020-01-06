@@ -1,62 +1,75 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="style_todo.css">
-    <title>To do</title>
-</head>
-<script defer src="todo.js"></script>
-<body>
-    <div class="tasker" id="tasker">
-        <div class="heading">TO DO LIST</div>
-        <div class="for-flex">
-            <div class="all-tasks">
-                <h3 class="my-list-heading">My Checklist</h3>
-                <ul data-lists>
-                    <!-- <li class="active-list list-name">checklist1</li>
-                    <li class='list-name'>checklist2</li>
-                    <li class='list-name'>checklist3</li> -->
-                </ul>
-                <form action="" data-new-list-form>
-                    <input type="text" placeholder="add new task" class="new-list" data-new-list-input>
-                    <button class="btn-list" aria-label="add new-list">+</button>
-                </form>
-            </div>
-            <div class="to-do-list" data-list-display-container>
-                <div class="to-do-header">
-                    <h3 class="list-title" data-list-title>Youtube</h3>
-                    <p class="task-count" data-list-count>3 tasks remaining</p>
-                </div>
-                <div class="to-do-body">
-                    <div class="tasks" data-tasks>
-                        <div class="task">
-                            <input type="checkbox" name="" id="task1" class="strike">
-                            <label for="task1">My first task in to do list</label>
-                        </div> 
-                        <div class="task">
-                            <input type="checkbox" name="" id="task2" class="strike">
-                            <label for="task2">My second task in to do list</label>
-                        </div> 
-                        <div class="task">
-                            <input type="checkbox" name="" id="task3" class="strike">
-                            <label for="task3">My third task in to do list</label>
-                        </div> 
-                    </div>
-                    
-                    <div class="new-task-creator">
-                        <form action="">
-                            <input type="text" placeholder="add new todo" class="new-to-do">
-                            <button class="btn-todo" aria-label="add new-to-do">+</button>
-                        </form>
-                    </div>
-                    <div class="delete-stuff">
-                        <button class="btn delete">Clear completed tasks</button>
-                        <button class="btn delete" data-delete-list-button>Delete list</button>
-                    </div>
-                </div>
-            </div>    
-        </div>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Todo list</title>
+    <link
+      href="https://fonts.googleapis.com/css?family=Work+Sans:300,400,700,900&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="style_todo.css" />
+    <script defer src="todo.js"></script>
+  </head>
+
+  <body>
+    <h1 class="title">To-do list</h1>
+
+    <div class="all-tasks">
+      <h2 class="task-list-title">My lists</h2>
+      <ul class="task-list" data-lists></ul>
+
+      <form action="" data-new-list-form>
+        <input 
+          type="text"
+          class="new list"
+          data-new-list-input
+          placeholder="new list name"
+          aria-label="new list name"
+        />
+        <button class="btn create" aria-label="create new list">+</button>
+      </form>
     </div>
-</body>
+
+    <div class="todo-list" data-list-display-container>
+      <div class="todo-header">
+        <h2 class="list-title" data-list-title>YouTube</h2>
+        <p class="task-count" data-list-count>3 tasks remaining</p>
+      </div>
+
+      <div class="todo-body">
+        <div class="tasks" data-tasks></div>
+
+        <div class="new-task-creator">
+            <form action="" data-new-task-form>
+                <input 
+                  type="text"
+                  data-new-task-input
+                  class="new task"
+                  placeholder="new task name"
+                  aria-label="new task name"
+                />
+                <button class="btn create" aria-label="create new task">+</button>
+              </form>
+        </div>
+
+        <div class="delete-stuff">
+          <button class="btn delete" data-clear-complete-tasks-button>Clear completed tasks</button>
+          <button class="btn delete" data-delete-list-button>Delete list</button>
+        </div>
+      </div>
+    </div>
+
+   
+    </div>
+    <template id="task-template">
+      <div class="task">
+        <input type="checkbox" />
+        <label>
+          <span class="custom-checkbox"></span>
+        </label>
+      </div>
+    </template>
+  </body>
 </html>
